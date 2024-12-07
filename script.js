@@ -1,6 +1,6 @@
 function showAlert() {
-    alert("First You Must Subscribe My YouTube Channel");
-    window.location.href = "https://www.google.com";
+    alert("It is a demo.");
+    window.location.href = "https://www.youtube.com/@bscodehub-r6m";
 }
 
 const cardData = [
