@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #E8E8E8;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header .navBar {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.navBar .logo {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 4vw;
+}
+
+.logo p {
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.logo p span {
+    color: #ed7e20;
+}
+
+.navBar .options {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options ul {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.options ul li {
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.options ul li:first-child {
+    color: #ed7e20;
+}
+
+.options .menu-bar {
+    display: none;
+}
+
+.navBar .btns {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    padding: 12px 50px;
+    border-radius: 10px;
+    border: none;
+    background: #ed7e20;
+    color: white;
+    font-size: 1vw;
+}
+
+.heroSection {
+    height: calc(100% - 15vh);
+    width: 100%;
+    display: flex;
+}
+
+.heroSection .leftBox {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.leftBox-title {
+    width: 100%;
+}
+
+.leftBox-title h1 {
+    width: 70%;
+    font-size: 50px;
+}
+
+.leftBox-title span {
+    color: #ed7e20;
+}
+
+.leftBox-title p {
+    font-size: 17px;
+    margin: 30px 0;
+    color: rgb(35, 35, 35);
+}
+
+.leftBox-title button {
+    padding: 1vw 4vw;
+    border: none;
+    color: white;
+    background: #ff6a00;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+.heroSection .rightBox {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.rightBox img {
+    width: 450px;
+    height: 450px;
+}
+
+main {
+    height: 55%;
+    width: 100%;
+}
+
+.ourSearvices {
+    width: 100%;
+    height: 50%;
+}
+
+.card-title {
+    text-align: center;
+    padding: 0 300px;
+}
+
+.card-title h2 {
+    font-size: 2.3vw;
+    margin: 7px 0;
+}
+
+.card-title p {
+    font-size: 1vw;
+    line-height: 20px;
+}
+
+.cards {
+    width: 100%;
+    height: 70%;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9vw;
+    align-items: center;
+}
+
+.cards .card {
+    height: 205px;
+    width: 230px;
+    background: #E8E8E8;
+    border-radius: 20px;
+    padding: 10px 22px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.image-of-card {
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-of-card {
+    height: calc(100% - 70px);
+}
+
+.text-of-card h4 {
+    font-size: 16px;
+}
+
+.text-of-card p {
+    font-size: 10px;
+    margin: 6px 0;
+    line-height: 15px;
+}
+
+.text-of-card .btn {
+    font-size: 12px;
+    background: #ff6a00;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: white;
+}
+
+
+footer {
+    height: 40%;
+    width: 100%;
+    background: #ff770030;
+    padding: 30px 50px;
+    display: flex;
+    gap: 5vw;
+}
+
+footer .social-media {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    cursor: pointer;
+}
+
+footer .texts {
+    height: 100%;
+    width: 60%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    header {
+        height: 90vh;
+    }
+    
+    .navBar .logo {
+        width: 35%;
+    }
+
+    .logo img {
+        width: 7vw;
+    }
+
+    .logo p {
+        font-size: 3vw;
+        font-weight: 800;
+    }
+
+    .navBar .options {
+        width: 15%;
+        height: 100%;
+    }
+
+    .navBar .options ul li {
+        display: none;
+    }
+
+    .options ul .menu-bar {
+        display: block;
+        width: 6vw;
+    }
+
+    .navBar .btns {
+        display: none;
+    }
+
+    .heroSection {
+        height: calc(100% - 15vh);
+        width: 100%;
+        display: block;
+    }
+
+    .heroSection .leftBox {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 60px;
+    }
+
+    .leftBox-title {
+        width: 100%;
+    }
+
+    .leftBox-title h1 {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .leftBox-title span {
+        color: #ed7e20;
+    }
+
+    .leftBox-title p {
+        font-size: 2.3vw;
+        line-height: 30px;
+        margin: 30px 0;
+        color: rgb(35, 35, 35);
+    }
+
+    .leftBox-title button {
+        padding: 1.5vw 5vw;
+        border: none;
+        color: white;
+        background: #ff6a00;
+        border-radius: 10px;
+        font-size: 2.5vw;
+    }
+
+    .heroSection .rightBox {
+        display: none;
+    }
+
+    main {
+        padding: 15px 0;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .cards .card {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .card-title {
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .card-title h2 {
+        font-size: 5vw;
+        margin: 8px 0;
+    }
+
+    .card-title p {
+        font-size: 2vw;
+        line-height: 25px;
+    }
+
+    .cards {
+        width: 100%;
+        height: 70%;
+        padding: 30px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        display: block;
+        height: 100%;
+        padding: 60px 50px;
+    }
+
+    footer .social-media {
+        width: 100%;
+        height: 30%;
+    }
+
+    footer .texts {
+        width: 100%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 630px) {
+    header {
+        height: 65vh;
+    }
+
+    header .leftBox {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 15px 0;
+        width: 100%;
+        height: 180%;
+        margin-bottom: 30px;
+    }
+    footer {
+        padding: 80px 50px;
+        height: 70%;
+    }
+    footer .texts {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
